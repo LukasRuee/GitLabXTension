@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/GitLabXTension/Editor/UIToolKit/GitLabXTensionStyle.uss?fileID=7433441132597879392&amp;guid=f1c8bf81fff0dda40848d12754a5f575&amp;type=3#GitLabXTensionStyle" />
+    <ui:VisualElement style="flex-grow: 1; flex-direction: column; align-items: center; justify-content: space-around; align-self: stretch;">
+        <ui:Label tabindex="-1" text="Usersettings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" class="Title" />
+        <ui:TextField picking-mode="Ignore" label="Git URL" name="TF_GitUrl" class="TextField InputField" style="justify-content: center; align-self: auto;" />
+        <ui:IntegerField label="Project ID" value="0" name="IF_ProjectID" class="TextField InputField" />
+        <ui:Button text="Save Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Btn_SetSettings" class="SmallButton" />
+        <ui:VisualElement name="Ve_PAT" style="flex-grow: 1; align-self: stretch; align-items: center; justify-content: center; flex-direction: row;">
+            <ui:TextField picking-mode="Ignore" label="New personal access token (PAT)" password="true" name="TF_PAT" class="TextField InputField" />
+            <ui:Button text="Set new PAT" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Btn_SetPAT" class="SmallButton" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Ve_PW" style="flex-grow: 1; flex-direction: row; justify-content: center; align-self: stretch; align-items: center;">
+            <ui:TextField picking-mode="Ignore" label="New Password" password="true" name="TF_NewPW" class="TextField InputField" style="align-self: auto; justify-content: space-between; align-items: center;" />
+            <ui:Button text="Set new password" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Btn_SetPW" class="SmallButton" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

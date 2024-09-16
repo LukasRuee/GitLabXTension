@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/GitLabXTension/Editor/UIToolKit/GitLabXTensionStyle.uss?fileID=7433441132597879392&amp;guid=f1c8bf81fff0dda40848d12754a5f575&amp;type=3#GitLabXTensionStyle" />
+    <ui:VisualElement style="flex-grow: 1; align-self: auto; justify-content: center; align-items: center; min-width: auto; min-height: auto;">
+        <ui:Label tabindex="-1" text="Logger" parse-escape-sequences="true" display-tooltip-when-elided="true" name="WindowTitle" class="Title" />
+        <ui:Button text="Clear Logs" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Btn_ClearLogs" />
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+            <ui:VisualElement name="Ve_TextBox" style="flex-grow: 1; width: 20%; background-color: rgba(255, 255, 255, 0.39); background-image: none; justify-content: center; align-items: center; align-self: auto;">
+                <ui:ListView focusable="true" name="Lv_Logs" virtualization-method="FixedHeight" fixed-item-height="16" horizontal-scrolling="true" selection-type="Single" class="ListView" style="width: 90%; height: 90%; align-items: flex-start; justify-content: flex-start;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

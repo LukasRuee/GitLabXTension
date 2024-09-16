@@ -1,0 +1,47 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/GitLabXTension/Editor/UIToolKit/GitLabXTensionStyle.uss?fileID=7433441132597879392&amp;guid=f1c8bf81fff0dda40848d12754a5f575&amp;type=3#GitLabXTensionStyle" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Label tabindex="-1" text="Create a Issue" parse-escape-sequences="true" display-tooltip-when-elided="true" name="WindowTitle" class="Title" />
+        <ui:VisualElement name="Title" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Issue Title" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TitleTitle" class="Subtitle" />
+            <ui:TextField picking-mode="Ignore" label="Title name" name="Tf_Title" class="TextField InputField" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Description" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Issue description" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DescriptionTitle" class="Subtitle" />
+            <ui:TextField picking-mode="Ignore" label="Description text" name="Tf_Description" class="TextField InputField" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Asignee" style="flex-grow: 1; flex-direction: column;">
+            <ui:Label tabindex="-1" text="Asignee" parse-escape-sequences="true" display-tooltip-when-elided="true" class="Subtitle" />
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                <ui:IntegerField label="Asignee ID" value="0" name="If_AsigneeID" class="TextField InputField" />
+                <ui:Button text="Assign me" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Btn_AssignMe" class="SmallButton" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="DueDate" style="flex-grow: 1; flex-direction: column;">
+            <ui:Label tabindex="-1" text="Asignee" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Lbl_DueDate" class="Subtitle" />
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                <ui:TextField picking-mode="Ignore" label="Due Date (Format: 0000-00-00)" name="Tf_DueDate" class="InputField" />
+                <ui:Button text="Due Today" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Btn_DueToday" class="SmallButton" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Confidential" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Confidential" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ConfidentialTitle" class="Subtitle" />
+            <ui:Toggle label="Is the issue confidential?" name="Tgl_IsConfidential" class="Toggle" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Incident" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Incident" parse-escape-sequences="true" display-tooltip-when-elided="true" name="IncidentTitle" class="Subtitle" />
+            <ui:Toggle label="Is the issue a incident?" name="Tgl_IsIncident" class="Toggle" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Labels" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Labels" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LabelTitle" class="Subtitle" />
+            <ui:Label tabindex="-1" text="No Label Selected" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Lbl_Labels" />
+            <ui:DropdownField label="Labels" index="-1" name="DdF_Labels" choices="A, B, C" class="Label DropdownField" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Milestones" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Milestones" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MilestoneTitle" class="Subtitle" />
+            <ui:DropdownField label="Milestones" index="-1" choices="A, B, C" name="DdF_Milestones" class="Label DropdownField" />
+        </ui:VisualElement>
+        <ui:Button text="Create Issue" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Btn_IssueCreator" class="Button" />
+        <ui:ProgressBar value="0" title="Upload Issue" name="Pg_CreateIssue" class="ProgressBar" />
+    </ui:VisualElement>
+</ui:UXML>

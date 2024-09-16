@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/GitLabXTension/Editor/UIToolKit/GitLabXTensionStyle.uss?fileID=7433441132597879392&amp;guid=f1c8bf81fff0dda40848d12754a5f575&amp;type=3#GitLabXTensionStyle" />
+    <ui:VisualElement style="flex-grow: 1; align-self: auto; justify-content: center; align-items: center; min-width: auto; min-height: auto;">
+        <ui:Label tabindex="-1" text="IssueBoard" parse-escape-sequences="true" display-tooltip-when-elided="true" name="WindowTitle" class="Title" />
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+            <ui:VisualElement name="Ve_IssueTitles" style="flex-grow: 1; width: 20%; background-color: rgba(255, 255, 255, 0.39); background-image: none; justify-content: center; align-items: center; align-self: auto;">
+                <ui:ListView focusable="true" name="Lv_Issues" virtualization-method="DynamicHeight" fixed-item-height="16" horizontal-scrolling="true" class="ListView" style="width: 90%; height: 90%; align-items: center; justify-content: center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Ve_IssueDescription" style="flex-grow: 1; width: 80%; background-color: rgba(166, 166, 166, 0.39); align-items: flex-start; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 2.5%; padding-right: 2.5%; padding-bottom: 2.5%; padding-left: 2.5%;">
+                <ui:Label tabindex="-1" text="Nothing selected" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Lbl_IssueDescription" class="Information" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Button text="Create new issue" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Btn_IssueCreator" class="Button" />
+        <ui:ProgressBar value="0" title="Fetching data" name="Pg_FetchIssues" class="ProgressBar" style="align-items: stretch; justify-content: flex-end; align-self: stretch;" />
+    </ui:VisualElement>
+</ui:UXML>

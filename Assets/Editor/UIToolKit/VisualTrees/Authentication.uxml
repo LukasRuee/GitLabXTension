@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/GitLabXTension/Editor/UIToolKit/GitLabXTensionStyle.uss?fileID=7433441132597879392&amp;guid=f1c8bf81fff0dda40848d12754a5f575&amp;type=3#GitLabXTensionStyle" />
+    <ui:VisualElement style="flex-grow: 1; align-self: auto; justify-content: center; align-items: center; min-width: auto; min-height: auto;">
+        <ui:Label tabindex="-1" text="Authentication" parse-escape-sequences="true" display-tooltip-when-elided="true" name="WindowTitle" class="Title" />
+        <ui:TextField picking-mode="Ignore" label="Username" name="TF_Username" class="TextField InputField" />
+        <ui:TextField picking-mode="Ignore" label="Password" password="true" name="TF_PW" class="TextField InputField" />
+        <ui:VisualElement style="flex-grow: 1; flex-wrap: nowrap; flex-direction: row;">
+            <ui:Button text="LogIn" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Btn_LogIn" class="Button" />
+            <ui:Button text="SignIn" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Btn_SignIn" class="Button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
